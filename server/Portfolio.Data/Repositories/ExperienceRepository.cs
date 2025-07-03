@@ -1,4 +1,5 @@
-﻿using Portfolio.Core.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using Portfolio.Core.Entities;
 using Portfolio.Core.Repositories;
 using System;
 using System.Collections.Generic;

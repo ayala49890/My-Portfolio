@@ -1,6 +1,6 @@
 ﻿namespace Portfolio.API.Models.Post
 {
-        public class ProfilePostModel
+        public class MyProfilePostModel
         {
             public string FullName { get; set; }
             public string Title { get; set; }

@@ -1,6 +1,6 @@
 ﻿namespace Portfolio.API.Models.DTOs
 {
-    public class ProfileDto
+    public class MyProfileDto
     {
         public int Id { get; set; }                     // Unique identifier
         public string FullName { get; set; }            // Full name

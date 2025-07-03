@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Portfolio.API.Models.DTOs;
-using Portfolio.API.Models.Post;
 using Portfolio.Core.Entities;
 using Portfolio.Core.Repositories;
 using Portfolio.Core.Services;
@@ -12,26 +11,31 @@ using System.Threading.Tasks;
 
 namespace Portfolio.Service
 {
-    public class ProfileService : IProfileService
+    public class MyProfileService : IMyProfileService
     {
-        private readonly IProfileRepository _repository;
+        private readonly IMyProfileRepository _repository;
         private readonly IMapper _mapper;
 
-        public ProfileService(IProfileRepository repository, IMapper mapper)
+        public MyProfileService(IMyProfileRepository repository, IMapper mapper)
         {
             _repository = repository;
             _mapper = mapper;
         }
 
-        public async Task<ProfileDto> GetProfileAsync()
+        public async Task<MyProfileDto> GetProfileAsync()
         {
             var profile = await _repository.GetAsync();
-            return _mapper.Map<ProfileDto>(profile);
+            return _mapper.Map<MyProfileDto>(profile);
         }
 
-        public async Task UpdateProfileAsync(ProfilePostModel model)
+        public Task UpdateMyProfileAsync(MyProfile myProfile)
         {
-            var entity = _mapper.Map<AutoMapper.Profile>(model);
+            throw new NotImplementedException();
+        }
+
+        public async Task UpdateProfileAsync(MyProfile myProfile)
+        {
+            var entity = _mapper.Map<AutoMapper.Profile>(myProfile);
             await _repository.UpdateAsync(entity);
         }
     }

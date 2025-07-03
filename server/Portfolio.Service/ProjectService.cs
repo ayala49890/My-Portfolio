@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Portfolio.API.Models.DTOs;
-using Portfolio.API.Models.Post;
 using Portfolio.Core.Entities;
 using Portfolio.Core.Repositories;
 using Portfolio.Core.Services;
@@ -12,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Portfolio.Service
 {
-    public class ProjectService : IProjectService
+    public class ProjectService : IMyProjectService
     {
         private readonly IProjectRepository _repository;
         private readonly IMapper _mapper;
@@ -35,15 +34,15 @@ namespace Portfolio.Service
             return _mapper.Map<ProjectDto>(entity);
         }
 
-        public async Task AddAsync(ProjectPostModel model)
+        public async Task AddAsync(Project project)
         {
-            var entity = _mapper.Map<Project>(model);
+            var entity = _mapper.Map<Project>(project);
             await _repository.AddAsync(entity);
         }
 
-        public async Task UpdateAsync(int id, ProjectPostModel model)
+        public async Task UpdateAsync(int id, Project project)
         {
-            var entity = _mapper.Map<Project>(model);
+            var entity = _mapper.Map<Project>(project);
             entity.Id = id;
             await _repository.UpdateAsync(entity);
         }
@@ -52,6 +51,8 @@ namespace Portfolio.Service
         {
             await _repository.DeleteAsync(id);
         }
+
+       
     }
 
 }

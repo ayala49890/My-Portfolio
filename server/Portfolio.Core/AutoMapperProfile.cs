@@ -8,7 +8,6 @@ namespace Portfolio.Core
 {
     using AutoMapper;
     using Portfolio.API.Models.DTOs;
-    using Portfolio.API.Models.Post;
     using Portfolio.Core.Entities;
 
     public class AutoMapperProfile : AutoMapper.Profile
@@ -18,20 +17,16 @@ namespace Portfolio.Core
             // Experience
             CreateMap<Experience, ExperienceDto>()
                 .ForMember(dest => dest.StartDate, opt => opt.MapFrom(src => src.StartDate.ToString("yyyy-MM-dd")))
-                .ForMember(dest => dest.EndDate, opt => opt.MapFrom(src => src.EndDate.HasValue ? src.EndDate.Value.ToString("yyyy-MM-dd") : null));
-            CreateMap<ExperiencePostModel, Experience>();
+                .ForMember(dest => dest.EndDate, opt => opt.MapFrom(src => src.EndDate.HasValue ? src.EndDate.Value.ToString("yyyy-MM-dd") : null)).ReverseMap();
 
             // Skill
-            CreateMap<Skill, SkillDto>();
-            CreateMap<SkillPostModel, Skill>();
+            CreateMap<Skill, SkillDto>().ReverseMap();
 
             // Profile
-            CreateMap<AutoMapper.Profile, ProfileDto>();
-            CreateMap<ProfilePostModel, AutoMapper.Profile>();
+            CreateMap<MyProfile, MyProfileDto>().ReverseMap();
 
             // Project (אם יש)
-            CreateMap<Project, ProjectDto>();
-            CreateMap<ProjectPostModel, Project>();
+            CreateMap<Project, ProjectDto>().ReverseMap();
         }
     }
 

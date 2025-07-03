@@ -1,5 +1,5 @@
 ﻿using Portfolio.API.Models.DTOs;
-using Portfolio.API.Models.Post;
+using Portfolio.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,8 +12,8 @@ namespace Portfolio.Core.Services
     {
         Task<List<ExperienceDto>> GetAllAsync();
         Task<ExperienceDto?> GetByIdAsync(int id);
-        Task AddAsync(ExperiencePostModel model);
-        Task UpdateAsync(int id, ExperiencePostModel model);
+        Task AddAsync(Experience experience);
+        Task UpdateAsync(int id, Experience experience);
         Task DeleteAsync(int id);
     }
 

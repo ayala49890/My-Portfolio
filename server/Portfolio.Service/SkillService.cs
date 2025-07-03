@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Portfolio.API.Models.DTOs;
-using Portfolio.API.Models.Post;
 using Portfolio.Core.Entities;
 using Portfolio.Core.Repositories;
 using Portfolio.Core.Services;
@@ -35,15 +34,15 @@ namespace Portfolio.Service
             return _mapper.Map<SkillDto>(entity);
         }
 
-        public async Task AddAsync(SkillPostModel model)
+        public async Task AddAsync(Skill skill)
         {
-            var entity = _mapper.Map<Skill>(model);
+            var entity = _mapper.Map<Skill>(skill);
             await _repository.AddAsync(entity);
         }
 
-        public async Task UpdateAsync(int id, SkillPostModel model)
+        public async Task UpdateAsync(int id, Skill skill)
         {
-            var entity = _mapper.Map<Skill>(model);
+            var entity = _mapper.Map<Skill>(skill);
             entity.Id = id;
             await _repository.UpdateAsync(entity);
         }

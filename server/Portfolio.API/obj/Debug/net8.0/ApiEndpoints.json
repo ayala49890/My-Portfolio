@@ -117,9 +117,9 @@
     ]
   },
   {
-    "ContainingType": "Portfolio.API.Controllers.ProfileController",
+    "ContainingType": "Portfolio.API.Controllers.MyProfileController",
     "Method": "Get",
-    "RelativePath": "api/Profile",
+    "RelativePath": "api/MyProfile",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -137,9 +137,9 @@
     ]
   },
   {
-    "ContainingType": "Portfolio.API.Controllers.ProfileController",
+    "ContainingType": "Portfolio.API.Controllers.MyProfileController",
     "Method": "Post",
-    "RelativePath": "api/Profile",
+    "RelativePath": "api/MyProfile",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -159,9 +159,9 @@
     ]
   },
   {
-    "ContainingType": "Portfolio.API.Controllers.ProfileController",
+    "ContainingType": "Portfolio.API.Controllers.MyProfileController",
     "Method": "Get",
-    "RelativePath": "api/Profile/{id}",
+    "RelativePath": "api/MyProfile/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -185,9 +185,9 @@
     ]
   },
   {
-    "ContainingType": "Portfolio.API.Controllers.ProfileController",
+    "ContainingType": "Portfolio.API.Controllers.MyProfileController",
     "Method": "Put",
-    "RelativePath": "api/Profile/{id}",
+    "RelativePath": "api/MyProfile/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -212,9 +212,9 @@
     ]
   },
   {
-    "ContainingType": "Portfolio.API.Controllers.ProfileController",
+    "ContainingType": "Portfolio.API.Controllers.MyProfileController",
     "Method": "Delete",
-    "RelativePath": "api/Profile/{id}",
+    "RelativePath": "api/MyProfile/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

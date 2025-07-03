@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Portfolio.Core.Entities
 {
-    public class Profile
+    public class MyProfile
     {
         public int Id { get; set; }
         public string FullName { get; set; }

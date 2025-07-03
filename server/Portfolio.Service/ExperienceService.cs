@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Portfolio.API.Models.DTOs;
-using Portfolio.API.Models.Post;
 using Portfolio.Core.Entities;
 using Portfolio.Core.Repositories;
 using Portfolio.Core.Services;
@@ -35,15 +34,15 @@ namespace Portfolio.Service
             return entity is null ? null : _mapper.Map<ExperienceDto>(entity);
         }
 
-        public async Task AddAsync(ExperiencePostModel model)
+        public async Task AddAsync(Experience experience)
         {
-            var entity = _mapper.Map<Experience>(model);
+            var entity = _mapper.Map<Experience>(experience);
             await _repository.AddAsync(entity);
         }
 
-        public async Task UpdateAsync(int id, ExperiencePostModel model)
+        public async Task UpdateAsync(int id, Experience experience)
         {
-            var entity = _mapper.Map<Experience>(model);
+            var entity = _mapper.Map<Experience>(experience);
             entity.Id = id;
             await _repository.UpdateAsync(entity);
         }
@@ -52,6 +51,7 @@ namespace Portfolio.Service
         {
             await _repository.DeleteAsync(id);
         }
+
     }
 
 }

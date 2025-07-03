@@ -1,4 +1,5 @@
-﻿using Portfolio.Core.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using Portfolio.Core.Entities;
 using Portfolio.Core.Repositories;
 using System;
 using System.Collections.Generic;
@@ -9,21 +10,21 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Portfolio.Data.Repositories
 {
-    public class ProfileRepository : IProfileRepository
+    public class MyProfileRepository : IMyProfileRepository
     {
         private readonly AppDbContext _context;
 
-        public ProfileRepository(AppDbContext context)
+        public MyProfileRepository(AppDbContext context)
         {
             _context = context;
         }
 
-        public async Task<Profile> GetAsync()
+        public async Task<MyProfile> GetAsync()
         {
             return await _context.Profiles.FirstOrDefaultAsync();
         }
 
-        public async Task UpdateAsync(Profile profile)
+        public async Task UpdateAsync(MyProfile profile)
         {
             _context.Profiles.Update(profile);
             await _context.SaveChangesAsync();

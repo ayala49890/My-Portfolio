@@ -173,10 +173,10 @@
         }
       }
     },
-    "/api/Profile": {
+    "/api/MyProfile": {
       "get": {
         "tags": [
-          "Profile"
+          "MyProfile"
         ],
         "responses": {
           "200": {
@@ -212,7 +212,7 @@
       },
       "post": {
         "tags": [
-          "Profile"
+          "MyProfile"
         ],
         "requestBody": {
           "content": {
@@ -240,10 +240,10 @@
         }
       }
     },
-    "/api/Profile/{id}": {
+    "/api/MyProfile/{id}": {
       "get": {
         "tags": [
-          "Profile"
+          "MyProfile"
         ],
         "parameters": [
           {
@@ -281,7 +281,7 @@
       },
       "put": {
         "tags": [
-          "Profile"
+          "MyProfile"
         ],
         "parameters": [
           {
@@ -321,7 +321,7 @@
       },
       "delete": {
         "tags": [
-          "Profile"
+          "MyProfile"
         ],
         "parameters": [
           {

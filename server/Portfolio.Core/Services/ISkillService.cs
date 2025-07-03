@@ -1,5 +1,5 @@
 ﻿using Portfolio.API.Models.DTOs;
-using Portfolio.API.Models.Post;
+using Portfolio.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,8 +12,8 @@ namespace Portfolio.Core.Services
     {
         Task<List<SkillDto>> GetAllAsync();
         Task<SkillDto> GetByIdAsync(int id);
-        Task AddAsync(SkillPostModel model);
-        Task UpdateAsync(int id, SkillPostModel model);
+        Task AddAsync(Skill skill);
+        Task UpdateAsync(int id, Skill skill);
         Task DeleteAsync(int id);
     }
 
