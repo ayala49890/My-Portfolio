@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Portfolio.Service
 {
-    public class ProjectService : IMyProjectService
+    public class ProjectService : IProjectService
     {
         private readonly IProjectRepository _repository;
         private readonly IMapper _mapper;

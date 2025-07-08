@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Portfolio.Core.Services
 {
-    public interface IMyProjectService
+    public interface IProjectService
     {
         Task<List<ProjectDto>> GetAllAsync();
         Task<ProjectDto> GetByIdAsync(int id);

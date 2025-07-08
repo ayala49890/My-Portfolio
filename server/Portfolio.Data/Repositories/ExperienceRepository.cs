@@ -24,19 +24,21 @@ namespace Portfolio.Data.Repositories
         public async Task<Experience?> GetByIdAsync(int id) =>
             await _context.Experiences.FindAsync(id);
 
-        public async Task AddAsync(Experience experience)
+        public async Task<Experience> AddAsync(Experience experience)
         {
             _context.Experiences.Add(experience);
             await _context.SaveChangesAsync();
+            return experience;
         }
 
-        public async Task UpdateAsync(Experience experience)
+        public async Task<Experience> UpdateAsync(Experience experience)
         {
             _context.Experiences.Update(experience);
             await _context.SaveChangesAsync();
+            return experience;
         }
 
-        public async Task DeleteAsync(int id)
+        public async Task<Experience> DeleteAsync(int id)
         {
             var entity = await _context.Experiences.FindAsync(id);
             if (entity is not null)
@@ -44,7 +46,10 @@ namespace Portfolio.Data.Repositories
                 _context.Experiences.Remove(entity);
                 await _context.SaveChangesAsync();
             }
+
+            return entity;
         }
+
     }
 
 }

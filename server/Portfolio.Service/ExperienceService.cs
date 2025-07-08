@@ -22,36 +22,40 @@ namespace Portfolio.Service
             _mapper = mapper;
         }
 
-        public async Task<List<ExperienceDto>> GetAllAsync()
-        {
-            var data = await _repository.GetAllAsync();
-            return _mapper.Map<List<ExperienceDto>>(data);
-        }
 
-        public async Task<ExperienceDto?> GetByIdAsync(int id)
+        public async Task<Experience?> GetByIdAsync(int id)
         {
             var entity = await _repository.GetByIdAsync(id);
-            return entity is null ? null : _mapper.Map<ExperienceDto>(entity);
+            return entity is null ? null : _mapper.Map<Experience>(entity);
         }
 
-        public async Task AddAsync(Experience experience)
+        public async Task<Experience> AddAsync(Experience experience)
         {
             var entity = _mapper.Map<Experience>(experience);
             await _repository.AddAsync(entity);
+            return entity;
         }
 
-        public async Task UpdateAsync(int id, Experience experience)
+        public async Task<Experience> UpdateAsync(int id, Experience experience)
         {
             var entity = _mapper.Map<Experience>(experience);
             entity.Id = id;
             await _repository.UpdateAsync(entity);
+            return entity;
         }
 
-        public async Task DeleteAsync(int id)
+        public async Task<Experience> DeleteAsync(int id)
         {
-            await _repository.DeleteAsync(id);
+            return await _repository.DeleteAsync(id);
         }
 
+        public async Task<List<Experience>> GetAllAsync()
+        {
+            var data = await _repository.GetAllAsync();
+            return _mapper.Map<List<Experience>>(data);
+        }
+
+        
     }
 
 }

@@ -2,6 +2,7 @@
 using Portfolio.Core.Entities;
 using AutoMapper;
 using System.Data;
+using Portfolio.API.Models.DTOs;
 
 
 namespace Portfolio.API
@@ -14,6 +15,7 @@ namespace Portfolio.API
             CreateMap<MyProfilePostModel, MyProfile>();
             CreateMap<ExperiencePostModel, Experience>();
             CreateMap<SkillPostModel, Skill>();
+            CreateMap<Experience, ExperienceDto>().ReverseMap();
 
         }
 

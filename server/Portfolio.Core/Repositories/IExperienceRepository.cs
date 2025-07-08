@@ -11,9 +11,9 @@ namespace Portfolio.Core.Repositories
     {
         Task<List<Experience>> GetAllAsync();
         Task<Experience?> GetByIdAsync(int id);
-        Task AddAsync(Experience experience);
-        Task UpdateAsync(Experience experience);
-        Task DeleteAsync(int id);
+        Task<Experience> AddAsync(Experience experience);
+        Task<Experience> UpdateAsync(Experience experience);
+        Task<Experience> DeleteAsync(int id);
     }
 
 }
