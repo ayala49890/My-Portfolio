@@ -12,7 +12,7 @@ using Portfolio.Data;
 namespace Portfolio.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250703133320_InitialCreate")]
+    [Migration("20250709125934_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -160,12 +160,7 @@ namespace Portfolio.Data.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.Property<string>("IconUrl")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<int>("Level")

@@ -21,22 +21,24 @@ namespace Portfolio.Data.Repositories
         public async Task<List<Skill>> GetAllAsync() =>
             await _context.Skills.ToListAsync();
 
-        public async Task<Skill> GetByIdAsync(int id) =>
+        public async Task<Skill?> GetByIdAsync(int id) =>
             await _context.Skills.FindAsync(id);
 
-        public async Task AddAsync(Skill Skill)
+        public async Task<Skill> AddAsync(Skill Skill)
         {
             _context.Skills.Add(Skill);
             await _context.SaveChangesAsync();
+            return Skill;
         }
 
-        public async Task UpdateAsync(Skill Skill)
+        public async Task<Skill> UpdateAsync(Skill Skill)
         {
             _context.Skills.Update(Skill);
             await _context.SaveChangesAsync();
+            return Skill;
         }
 
-        public async Task DeleteAsync(int id)
+        public async Task<Skill> DeleteAsync(int id)
         {
             var entity = await _context.Skills.FindAsync(id);
             if (entity != null)
@@ -44,6 +46,7 @@ namespace Portfolio.Data.Repositories
                 _context.Skills.Remove(entity);
                 await _context.SaveChangesAsync();
             }
+            return entity;
         }
     }
 

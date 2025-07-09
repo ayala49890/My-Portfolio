@@ -10,11 +10,11 @@ namespace Portfolio.Core.Services
 {
     public interface ISkillService
     {
-        Task<List<SkillDto>> GetAllAsync();
-        Task<SkillDto> GetByIdAsync(int id);
-        Task AddAsync(Skill skill);
-        Task UpdateAsync(int id, Skill skill);
-        Task DeleteAsync(int id);
+        Task<List<Skill>> GetAllAsync();
+        Task<Skill?> GetByIdAsync(int id);
+        Task<Skill> AddAsync(Skill skill);
+        Task<Skill> UpdateAsync(int id, Skill skill);
+        Task<Skill> DeleteAsync(int id);
     }
 
 }

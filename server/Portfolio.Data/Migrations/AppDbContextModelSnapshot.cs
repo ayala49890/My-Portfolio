@@ -157,12 +157,7 @@ namespace Portfolio.Data.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.Property<string>("IconUrl")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<int>("Level")

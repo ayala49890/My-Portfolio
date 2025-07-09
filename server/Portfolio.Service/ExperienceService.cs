@@ -13,26 +13,26 @@ namespace Portfolio.Service
 {
     public class ExperienceService : IExperienceService
     {
-        private readonly IExperienceRepository _repository;
+        private readonly IExperienceRepository _experienceRepository;
         private readonly IMapper _mapper;
 
         public ExperienceService(IExperienceRepository repository, IMapper mapper)
         {
-            _repository = repository;
+            _experienceRepository = repository;
             _mapper = mapper;
         }
 
 
         public async Task<Experience?> GetByIdAsync(int id)
         {
-            var entity = await _repository.GetByIdAsync(id);
+            var entity = await _experienceRepository.GetByIdAsync(id);
             return entity is null ? null : _mapper.Map<Experience>(entity);
         }
 
         public async Task<Experience> AddAsync(Experience experience)
         {
             var entity = _mapper.Map<Experience>(experience);
-            await _repository.AddAsync(entity);
+            await _experienceRepository.AddAsync(entity);
             return entity;
         }
 
@@ -40,18 +40,18 @@ namespace Portfolio.Service
         {
             var entity = _mapper.Map<Experience>(experience);
             entity.Id = id;
-            await _repository.UpdateAsync(entity);
+            await _experienceRepository.UpdateAsync(entity);
             return entity;
         }
 
         public async Task<Experience> DeleteAsync(int id)
         {
-            return await _repository.DeleteAsync(id);
+            return await _experienceRepository.DeleteAsync(id);
         }
 
         public async Task<List<Experience>> GetAllAsync()
         {
-            var data = await _repository.GetAllAsync();
+            var data = await _experienceRepository.GetAllAsync();
             return _mapper.Map<List<Experience>>(data);
         }
 

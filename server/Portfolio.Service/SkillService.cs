@@ -5,6 +5,7 @@ using Portfolio.Core.Repositories;
 using Portfolio.Core.Services;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,43 +14,51 @@ namespace Portfolio.Service
 {
     public class SkillService : ISkillService
     {
-        private readonly ISkillRepository _repository;
-        private readonly IMapper _mapper;
+        private readonly ISkillRepository _skillRepository;
 
         public SkillService(ISkillRepository repository, IMapper mapper)
         {
-            _repository = repository;
-            _mapper = mapper;
+            _skillRepository = repository;
         }
 
-        public async Task<List<SkillDto>> GetAllAsync()
+        public async Task<List<Skill>> GetAllAsync()
         {
-            var entities = await _repository.GetAllAsync();
-            return _mapper.Map<List<SkillDto>>(entities);
+            var entities = await _skillRepository.GetAllAsync();
+            return entities;
         }
 
-        public async Task<SkillDto> GetByIdAsync(int id)
+        public async Task<Skill> GetByIdAsync(int id)
         {
-            var entity = await _repository.GetByIdAsync(id);
-            return _mapper.Map<SkillDto>(entity);
+            var entity = await _skillRepository.GetByIdAsync(id);
+            return entity;
         }
 
-        public async Task AddAsync(Skill skill)
+        public async Task<Skill> AddAsync(Skill skill)
         {
-            var entity = _mapper.Map<Skill>(skill);
-            await _repository.AddAsync(entity);
+            await _skillRepository.AddAsync(skill);
+            return skill;
         }
 
-        public async Task UpdateAsync(int id, Skill skill)
+        public async Task<Skill> UpdateAsync(int id, Skill skill)
         {
-            var entity = _mapper.Map<Skill>(skill);
-            entity.Id = id;
-            await _repository.UpdateAsync(entity);
+            var existSkill = await _skillRepository.GetByIdAsync(id);
+            if (existSkill != null)
+            {
+                existSkill.Name = skill.Name;
+                existSkill.Category = skill.Category;
+                existSkill.IconUrl = skill.IconUrl;
+              
+            }
+
+            await _skillRepository.UpdateAsync(existSkill);
+
+            return existSkill;
         }
 
-        public async Task DeleteAsync(int id)
+
+        public async Task<Skill> DeleteAsync(int id)
         {
-            await _repository.DeleteAsync(id);
+           return await _skillRepository.DeleteAsync(id);
         }
     }
 

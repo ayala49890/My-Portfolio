@@ -46,7 +46,6 @@ namespace Portfolio.Data.Repositories
                 _context.Experiences.Remove(entity);
                 await _context.SaveChangesAsync();
             }
-
             return entity;
         }
 

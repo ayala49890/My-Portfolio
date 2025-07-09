@@ -11,9 +11,9 @@ namespace Portfolio.Core.Repositories
     {
         Task<List<Skill>> GetAllAsync();
         Task<Skill> GetByIdAsync(int id);
-        Task AddAsync(Skill skill);
-        Task UpdateAsync(Skill skill);
-        Task DeleteAsync(int id);
+        Task<Skill> AddAsync(Skill skill);
+        Task<Skill> UpdateAsync(Skill skill);
+        Task<Skill> DeleteAsync(int id);
     }
 
 }
