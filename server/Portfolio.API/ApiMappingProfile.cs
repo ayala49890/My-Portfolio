@@ -11,11 +11,18 @@ namespace Portfolio.API
     {
         public ApiMappingProfile()
         {
-            CreateMap<ProjectPostModel, Project>();
             CreateMap<MyProfilePostModel, MyProfile>();
+
             CreateMap<ExperiencePostModel, Experience>();
-            CreateMap<SkillPostModel, Skill>();
             CreateMap<Experience, ExperienceDto>().ReverseMap();
+            CreateMap<ProjectPostModel, Project>();
+            CreateMap<Project, ProjectDto>().ReverseMap();
+
+            CreateMap<ProjectSkill, ProjectSkillPostModel>().ReverseMap();
+            
+
+
+
 
         }
 

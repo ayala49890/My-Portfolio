@@ -1,4 +1,6 @@
-﻿namespace Portfolio.API.Models.Post
+﻿using Portfolio.Core.Entities;
+
+namespace Portfolio.API.Models.Post
 {
     public class ProjectPostModel
     {
@@ -7,6 +9,6 @@
         public string Url { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime? EndDate { get; set; }
-        public List<string> Technologies { get; set; }
+        public List<ProjectSkill> Technologies { get; set; }
     }
 }

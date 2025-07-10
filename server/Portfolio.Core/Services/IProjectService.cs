@@ -10,11 +10,11 @@ namespace Portfolio.Core.Services
 {
     public interface IProjectService
     {
-        Task<List<ProjectDto>> GetAllAsync();
-        Task<ProjectDto> GetByIdAsync(int id);
-        Task AddAsync(Project project);
-        Task UpdateAsync(int id, Project projectl);
-        Task DeleteAsync(int id);
+        Task<List<Project>> GetAllAsync();
+        Task<Project?> GetByIdAsync(int id);
+        Task<Project> AddAsync(Project project);
+        Task<Project> UpdateAsync(int id, Project projectl);
+        Task<Project> DeleteAsync(int id);
     }
 
 }

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Portfolio.Data;
 
@@ -11,9 +12,11 @@ using Portfolio.Data;
 namespace Portfolio.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250710185648_Change")]
+    partial class Change
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -121,6 +124,10 @@ namespace Portfolio.Data.Migrations
                     b.Property<DateTime?>("EndDate")
                         .HasColumnType("datetime(6)");
 
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -157,7 +164,7 @@ namespace Portfolio.Data.Migrations
 
                     b.HasIndex("SkillId");
 
-                    b.ToTable("ProjectSkills");
+                    b.ToTable("ProjectSkill");
                 });
 
             modelBuilder.Entity("Portfolio.Core.Entities.Skill", b =>

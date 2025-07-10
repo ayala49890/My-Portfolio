@@ -21,30 +21,43 @@ namespace Portfolio.Data.Repositories
         public async Task<List<Project>> GetAllAsync() =>
             await _context.Projects.ToListAsync();
 
-        public async Task<Project> GetByIdAsync(int id) =>
+        public async Task<Project?> GetByIdAsync(int id) =>
             await _context.Projects.FindAsync(id);
 
-        public async Task AddAsync(Project project)
+        public async Task<Project> AddAsync(Project project)
         {
             _context.Projects.Add(project);
             await _context.SaveChangesAsync();
+            return project;
         }
 
-        public async Task UpdateAsync(Project project)
+        public async Task<Project> UpdateAsync(Project project)
         {
             _context.Projects.Update(project);
             await _context.SaveChangesAsync();
+            return project;
         }
 
-        public async Task DeleteAsync(int id)
+        public async Task<Project> DeleteAsync(int id)
         {
-            var entity = await _context.Projects.FindAsync(id);
+            var entity = await _context.Projects
+                .Include(p => p.Technologies)  // טען את הרשומות התלויות
+                .FirstOrDefaultAsync(p => p.Id == id);
+
             if (entity != null)
             {
+                // מחק את כל הקישורים לטבלאות המשניות קודם
+                if (entity.Technologies != null)
+                {
+                    _context.ProjectSkills.RemoveRange(entity.Technologies);
+                }
+
                 _context.Projects.Remove(entity);
                 await _context.SaveChangesAsync();
             }
+            return entity;
         }
+
     }
 
 }

@@ -22,6 +22,11 @@ namespace Portfolio.Service
             _mapper = mapper;
         }
 
+        public async Task<List<Experience>> GetAllAsync()
+        {
+            var data = await _experienceRepository.GetAllAsync();
+            return _mapper.Map<List<Experience>>(data);
+        }
 
         public async Task<Experience?> GetByIdAsync(int id)
         {
@@ -49,11 +54,7 @@ namespace Portfolio.Service
             return await _experienceRepository.DeleteAsync(id);
         }
 
-        public async Task<List<Experience>> GetAllAsync()
-        {
-            var data = await _experienceRepository.GetAllAsync();
-            return _mapper.Map<List<Experience>>(data);
-        }
+        
 
         
     }

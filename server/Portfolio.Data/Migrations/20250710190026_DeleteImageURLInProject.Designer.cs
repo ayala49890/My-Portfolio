@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Portfolio.Data;
 
@@ -11,9 +12,11 @@ using Portfolio.Data;
 namespace Portfolio.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250710190026_DeleteImageURLInProject")]
+    partial class DeleteImageURLInProject
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -137,29 +140,6 @@ namespace Portfolio.Data.Migrations
                     b.ToTable("Projects");
                 });
 
-            modelBuilder.Entity("Portfolio.Core.Entities.ProjectSkill", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("ProjectId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("SkillId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProjectId");
-
-                    b.HasIndex("SkillId");
-
-                    b.ToTable("ProjectSkills");
-                });
-
             modelBuilder.Entity("Portfolio.Core.Entities.Skill", b =>
                 {
                     b.Property<int>("Id")
@@ -179,26 +159,21 @@ namespace Portfolio.Data.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<int?>("ProjectId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("ProjectId");
 
                     b.ToTable("Skills");
                 });
 
-            modelBuilder.Entity("Portfolio.Core.Entities.ProjectSkill", b =>
+            modelBuilder.Entity("Portfolio.Core.Entities.Skill", b =>
                 {
                     b.HasOne("Portfolio.Core.Entities.Project", null)
                         .WithMany("Technologies")
-                        .HasForeignKey("ProjectId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Portfolio.Core.Entities.Skill", "Skill")
-                        .WithMany()
-                        .HasForeignKey("SkillId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Skill");
+                        .HasForeignKey("ProjectId");
                 });
 
             modelBuilder.Entity("Portfolio.Core.Entities.Project", b =>

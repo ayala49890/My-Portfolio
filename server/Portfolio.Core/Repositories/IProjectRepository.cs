@@ -10,10 +10,10 @@ namespace Portfolio.Core.Repositories
     public interface IProjectRepository
     {
         Task<List<Project>> GetAllAsync();
-        Task<Project> GetByIdAsync(int id);
-        Task AddAsync(Project project);
-        Task UpdateAsync(Project project);
-        Task DeleteAsync(int id);
+        Task<Project?> GetByIdAsync(int id);
+        Task<Project> AddAsync(Project project);
+        Task<Project> UpdateAsync(Project project);
+        Task<Project> DeleteAsync(int id);
     }
 
 }

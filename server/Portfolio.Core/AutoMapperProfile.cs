@@ -35,14 +35,15 @@ namespace Portfolio.Core
                 .ForMember(dest => dest.Role, opt => opt.MapFrom(src => src.Role))
                 .ForMember(dest => dest.StartDate, opt => opt.MapFrom(src => src.StartDate))
                 .ForMember(dest => dest.EndDate, opt => opt.MapFrom(src => src.EndDate))
-                .ForMember(dest => dest.Description, opt => opt.MapFrom(src => src.Description));            // Skill
-            CreateMap<Skill, SkillDto>().ReverseMap();
+                .ForMember(dest => dest.Description, opt => opt.MapFrom(src => src.Description)); 
+            
 
             // Profile
             CreateMap<MyProfile, MyProfileDto>().ReverseMap();
 
-            // Project (אם יש)
+            // Project
             CreateMap<Project, ProjectDto>().ReverseMap();
+        
         }
     }
 

@@ -12,12 +12,9 @@ namespace Portfolio.Core.Entities
         public string Name { get; set; }
         public string Description { get; set; }
         public string Url { get; set; }
-        public string ImageUrl { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime? EndDate { get; set; }
-
-        // In a real-world app, Technologies would be a related table
-        public string TechnologiesSerialized { get; set; } // store as JSON
+        public List<ProjectSkill> Technologies { get; set; } 
     }
 
 }

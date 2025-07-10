@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace Portfolio.Core.Entities
 {
-    public class Skill
+    public class ProjectSkill
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string Category { get; set; }
-        public string? IconUrl { get; set; }
+        public int ProjectId { get; set; }
+        public int SkillId { get; set; }    
+        public Skill Skill { get; set; }
 
     }
-
 }

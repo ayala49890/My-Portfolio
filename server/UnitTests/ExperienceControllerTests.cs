@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using Portfolio.API.Controllers;
 using Portfolio.API.Models.DTOs;
+using Portfolio.Core.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,13 +13,7 @@ namespace UnitTests
 {
     public class ExperienceControllerTests
     {
-        //[Fact]
-        //public void GetAll_ReturnsListOfExperience()
-        //{
-        //    var controller = new ExperienceController();
-        //    var result = controller.Get();
-        //    Assert.IsType<List<ExperienceDto>>(result);
-        //}
+      
 
         //[Fact]
         //public void GetAll_Returnsstring()

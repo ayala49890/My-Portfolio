@@ -13,43 +13,45 @@ namespace Portfolio.Service
 {
     public class ProjectService : IProjectService
     {
-        private readonly IProjectRepository _repository;
+        private readonly IProjectRepository _projectRepository;
         private readonly IMapper _mapper;
 
         public ProjectService(IProjectRepository repository, IMapper mapper)
         {
-            _repository = repository;
+            _projectRepository = repository;
             _mapper = mapper;
         }
 
-        public async Task<List<ProjectDto>> GetAllAsync()
+        public async Task<List<Project>> GetAllAsync()
         {
-            var entities = await _repository.GetAllAsync();
-            return _mapper.Map<List<ProjectDto>>(entities);
+            var data = await _projectRepository.GetAllAsync();
+            return  _mapper.Map<List<Project>>(data);
         }
 
-        public async Task<ProjectDto> GetByIdAsync(int id)
+        public async Task<Project?> GetByIdAsync(int id)
         {
-            var entity = await _repository.GetByIdAsync(id);
-            return _mapper.Map<ProjectDto>(entity);
+            var entity = await _projectRepository.GetByIdAsync(id);
+            return entity is null ? null : _mapper.Map<Project>(entity);
         }
 
-        public async Task AddAsync(Project project)
+        public async Task<Project> AddAsync(Project project)
         {
             var entity = _mapper.Map<Project>(project);
-            await _repository.AddAsync(entity);
+            await _projectRepository.AddAsync(entity);
+            return entity;
         }
 
-        public async Task UpdateAsync(int id, Project project)
+        public async Task<Project> UpdateAsync(int id, Project project)
         {
             var entity = _mapper.Map<Project>(project);
             entity.Id = id;
-            await _repository.UpdateAsync(entity);
+            await _projectRepository.UpdateAsync(entity);
+            return entity;
         }
 
-        public async Task DeleteAsync(int id)
+        public async Task<Project> DeleteAsync(int id)
         {
-            await _repository.DeleteAsync(id);
+           return await _projectRepository.DeleteAsync(id);
         }
 
        

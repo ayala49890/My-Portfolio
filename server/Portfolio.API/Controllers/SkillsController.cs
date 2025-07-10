@@ -64,7 +64,7 @@ namespace Portfolio.API.Controllers
 
         // DELETE api/<SkillsController>/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
             var deletedSkill = await _skillService.DeleteAsync(id);
             if (deletedSkill == null)

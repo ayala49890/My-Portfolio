@@ -12,8 +12,8 @@ using Portfolio.Data;
 namespace Portfolio.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250709125934_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20250710191446_Update-Project-1")]
+    partial class UpdateProject1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -124,20 +124,12 @@ namespace Portfolio.Data.Migrations
                     b.Property<DateTime?>("EndDate")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<string>("ImageUrl")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime(6)");
-
-                    b.Property<string>("TechnologiesSerialized")
-                        .IsRequired()
-                        .HasColumnType("longtext");
 
                     b.Property<string>("Url")
                         .IsRequired()
@@ -146,6 +138,29 @@ namespace Portfolio.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Projects");
+                });
+
+            modelBuilder.Entity("Portfolio.Core.Entities.ProjectSkill", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ProjectId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SkillId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProjectId");
+
+                    b.HasIndex("SkillId");
+
+                    b.ToTable("ProjectSkills");
                 });
 
             modelBuilder.Entity("Portfolio.Core.Entities.Skill", b =>
@@ -163,9 +178,6 @@ namespace Portfolio.Data.Migrations
                     b.Property<string>("IconUrl")
                         .HasColumnType("longtext");
 
-                    b.Property<int>("Level")
-                        .HasColumnType("int");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -173,6 +185,28 @@ namespace Portfolio.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Skills");
+                });
+
+            modelBuilder.Entity("Portfolio.Core.Entities.ProjectSkill", b =>
+                {
+                    b.HasOne("Portfolio.Core.Entities.Project", null)
+                        .WithMany("Technologies")
+                        .HasForeignKey("ProjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Portfolio.Core.Entities.Skill", "Skill")
+                        .WithMany()
+                        .HasForeignKey("SkillId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Skill");
+                });
+
+            modelBuilder.Entity("Portfolio.Core.Entities.Project", b =>
+                {
+                    b.Navigation("Technologies");
                 });
 #pragma warning restore 612, 618
         }

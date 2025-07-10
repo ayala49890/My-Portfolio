@@ -67,13 +67,13 @@ namespace Portfolio.API.Controllers
 
         // DELETE api/<ExperienceController>/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
             var deleted = await _experienceService.DeleteAsync(id);
             if (deleted == null)
                 return NotFound();
 
-            return Ok(_mapper.Map<ExperienceDto>(deleted)); 
+            return Ok(deleted); 
         }
 
     }

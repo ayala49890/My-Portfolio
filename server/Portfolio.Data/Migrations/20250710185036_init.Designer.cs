@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Portfolio.Data;
 
@@ -11,9 +12,11 @@ using Portfolio.Data;
 namespace Portfolio.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250710185036_init")]
+    partial class Init
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -121,9 +124,16 @@ namespace Portfolio.Data.Migrations
                     b.Property<DateTime?>("EndDate")
                         .HasColumnType("datetime(6)");
 
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("longtext");
+
+                    b.Property<int?>("SkillId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime(6)");
@@ -133,6 +143,8 @@ namespace Portfolio.Data.Migrations
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("SkillId");
 
                     b.ToTable("Projects");
                 });
@@ -157,7 +169,7 @@ namespace Portfolio.Data.Migrations
 
                     b.HasIndex("SkillId");
 
-                    b.ToTable("ProjectSkills");
+                    b.ToTable("ProjectSkill");
                 });
 
             modelBuilder.Entity("Portfolio.Core.Entities.Skill", b =>
@@ -184,6 +196,13 @@ namespace Portfolio.Data.Migrations
                     b.ToTable("Skills");
                 });
 
+            modelBuilder.Entity("Portfolio.Core.Entities.Project", b =>
+                {
+                    b.HasOne("Portfolio.Core.Entities.Skill", null)
+                        .WithMany("Projects")
+                        .HasForeignKey("SkillId");
+                });
+
             modelBuilder.Entity("Portfolio.Core.Entities.ProjectSkill", b =>
                 {
                     b.HasOne("Portfolio.Core.Entities.Project", null)
@@ -204,6 +223,11 @@ namespace Portfolio.Data.Migrations
             modelBuilder.Entity("Portfolio.Core.Entities.Project", b =>
                 {
                     b.Navigation("Technologies");
+                });
+
+            modelBuilder.Entity("Portfolio.Core.Entities.Skill", b =>
+                {
+                    b.Navigation("Projects");
                 });
 #pragma warning restore 612, 618
         }
