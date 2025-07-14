@@ -1,5 +1,4 @@
-﻿using Portfolio.API.Models.DTOs;
-using Portfolio.Core.Entities;
+﻿using Portfolio.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,8 +9,9 @@ namespace Portfolio.Core.Services
 {
     public interface IMyProfileService
     {
-        Task<MyProfileDto> GetProfileAsync();
-        Task UpdateMyProfileAsync(MyProfile myProfile);
+        Task<MyProfile> GetAsync();
+        Task<MyProfile> UpdateAsync( MyProfile myProfile);
+        Task<MyProfile> AddAsync(MyProfile myProfile);
     }
 
 }

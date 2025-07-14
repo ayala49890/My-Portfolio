@@ -19,21 +19,25 @@ namespace Portfolio.Data.Repositories
             _context = context;
         }
 
+        public Task<MyProfile> AddAsync(MyProfile myProfile)
+        {
+            _context.Profiles.Add(myProfile);
+            _context.SaveChanges();
+            return Task.FromResult(myProfile);
+        }
+
         public async Task<MyProfile> GetAsync()
         {
             return await _context.Profiles.FirstOrDefaultAsync();
         }
 
-        public async Task UpdateAsync(MyProfile profile)
+        public async Task<MyProfile> UpdateAsync(MyProfile profile)
         {
             _context.Profiles.Update(profile);
             await _context.SaveChangesAsync();
+            return profile;
         }
 
-        public Task UpdateAsync(AutoMapper.Profile entity)
-        {
-            throw new NotImplementedException();
-        }
     }
 
 }

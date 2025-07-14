@@ -14,10 +14,7 @@ namespace Portfolio.Core.Entities
         public string Summary { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
-        public string LinkedInUrl { get; set; }
         public string GitHubUrl { get; set; }
-        public string WebsiteUrl { get; set; }
-        public string ProfileImageUrl { get; set; }
     }
 
 }

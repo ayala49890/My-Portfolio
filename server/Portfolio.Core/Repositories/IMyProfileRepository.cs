@@ -12,8 +12,8 @@ namespace Portfolio.Core.Repositories
     public interface IMyProfileRepository
     {
         Task<MyProfile> GetAsync();
-        Task UpdateAsync(MyProfile myProfile);
-        Task UpdateAsync(Profile entity);
+        Task<MyProfile> AddAsync(MyProfile myProfile);
+        Task<MyProfile> UpdateAsync(MyProfile myProfile);
     }
 
 }
