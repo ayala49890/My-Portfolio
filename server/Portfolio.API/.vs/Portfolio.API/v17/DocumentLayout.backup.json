@@ -3,11 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D924FB42-A681-4C6A-AF50-83AC884AFE25}|Portfolio.API.csproj|c:\\users\\user1\\desktop\\ayalaportfolio\\server\\portfolio.api\\controllers\\myprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D924FB42-A681-4C6A-AF50-83AC884AFE25}|Portfolio.API.csproj|solutionrelative:controllers\\myprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D924FB42-A681-4C6A-AF50-83AC884AFE25}|Portfolio.API.csproj|c:\\users\\user1\\desktop\\ayalaportfolio\\server\\portfolio.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D924FB42-A681-4C6A-AF50-83AC884AFE25}|Portfolio.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.Data\\Migrations\\20250714195022_DeleteLinkdIn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D924FB42-A681-4C6A-AF50-83AC884AFE25}|Portfolio.API.csproj|c:\\users\\user1\\desktop\\ayalaportfolio\\server\\portfolio.api\\controllers\\myprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D924FB42-A681-4C6A-AF50-83AC884AFE25}|Portfolio.API.csproj|solutionrelative:controllers\\myprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D924FB42-A681-4C6A-AF50-83AC884AFE25}|Portfolio.API.csproj|c:\\users\\user1\\desktop\\ayalaportfolio\\server\\portfolio.api\\controllers\\skillscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -24,6 +25,9 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A8D66D62-DBE6-46F1-A5E5-E0A4232EE5E5}|..\\Portfolio.Core\\Portfolio.Core.csproj|c:\\users\\user1\\desktop\\ayalaportfolio\\server\\portfolio.core\\services\\imyprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A6B71A-E2BE-4987-A173-D9DD32A8E320}|..\\Portfolio.Data\\Portfolio.Data.csproj|c:\\users\\user1\\desktop\\ayalaportfolio\\server\\portfolio.data\\migrations\\20250714195022_deletelinkdin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,11 +37,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAuwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T09:51:23.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "20250714195022_DeleteLinkdIn.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.Data\\Migrations\\20250714195022_DeleteLinkdIn.cs",
               "RelativeDocumentMoniker": "..\\Portfolio.Data\\Migrations\\20250714195022_DeleteLinkdIn.cs",
@@ -45,8 +62,7 @@
               "RelativeToolTip": "..\\Portfolio.Data\\Migrations\\20250714195022_DeleteLinkdIn.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T19:50:22.965Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-14T19:50:22.965Z"
             },
             {
               "$type": "Document",
@@ -58,17 +74,16 @@
               "RelativeToolTip": "Controllers\\SkillsController.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAA3wCUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T19:45:44.554Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-14T19:45:44.554Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MyProfileController.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.API\\Controllers\\MyProfileController.cs",
               "RelativeDocumentMoniker": "Controllers\\MyProfileController.cs",
-              "ToolTip": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.API\\Controllers\\MyProfileController.cs*",
-              "RelativeToolTip": "Controllers\\MyProfileController.cs*",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.API\\Controllers\\MyProfileController.cs",
+              "RelativeToolTip": "Controllers\\MyProfileController.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAAwBsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-14T19:45:40.477Z",
@@ -84,8 +99,7 @@
               "RelativeToolTip": "..\\Portfolio.Service\\SkillService.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAQwCUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T19:44:26.207Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-14T19:44:26.207Z"
             },
             {
               "$type": "Document",
@@ -97,8 +111,7 @@
               "RelativeToolTip": "..\\Portfolio.Service\\MyProfileService.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAxwBsAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T19:44:17.074Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-14T19:44:17.074Z"
             },
             {
               "$type": "Document",
@@ -110,8 +123,7 @@
               "RelativeToolTip": "..\\Portfolio.Data\\Repositories\\MyProfileRepository.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T19:43:07.457Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-14T19:43:07.457Z"
             },
             {
               "$type": "Document",
@@ -123,8 +135,7 @@
               "RelativeToolTip": "..\\Portfolio.Core\\Services\\IMyProfileService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T19:42:54.301Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-14T19:42:54.301Z"
             }
           ]
         }
