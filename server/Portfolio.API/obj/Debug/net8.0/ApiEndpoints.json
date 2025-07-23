@@ -128,7 +128,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "project",
+        "Name": "projectModel",
         "Type": "Portfolio.API.Models.Post.ProjectPostModel",
         "IsRequired": true
       }
@@ -165,7 +165,7 @@
         "IsRequired": true
       },
       {
-        "Name": "project",
+        "Name": "projectModel",
         "Type": "Portfolio.API.Models.Post.ProjectPostModel",
         "IsRequired": true
       }

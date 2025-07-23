@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using Portfolio.API.Models.DTOs;
 using Portfolio.Core.Entities;
 using Portfolio.Core.Repositories;
@@ -32,6 +33,7 @@ namespace Portfolio.Service
             var entity = await _skillRepository.GetByIdAsync(id);
             return entity;
         }
+        
 
         public async Task<Skill> AddAsync(Skill skill)
         {

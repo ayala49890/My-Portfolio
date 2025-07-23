@@ -539,6 +539,10 @@
             "type": "string",
             "nullable": true
           },
+          "imageUrl": {
+            "type": "string",
+            "nullable": true
+          },
           "startDate": {
             "type": "string",
             "format": "date-time"
@@ -548,33 +552,13 @@
             "format": "date-time",
             "nullable": true
           },
-          "technologies": {
+          "skillIds": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/ProjectSkill"
+              "type": "integer",
+              "format": "int32"
             },
             "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "ProjectSkill": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "projectId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "skillId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "skill": {
-            "$ref": "#/components/schemas/Skill"
           }
         },
         "additionalProperties": false

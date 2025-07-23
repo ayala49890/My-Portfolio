@@ -18,11 +18,22 @@ namespace Portfolio.Data.Repositories
             _context = context;
         }
 
-        public async Task<List<Project>> GetAllAsync() =>
-            await _context.Projects.ToListAsync();
+        public async Task<List<Project>> GetAllAsync()
+        {
+            return await _context.Projects
+                .Include(p => p.Technologies)
+                    .ThenInclude(pt => pt.Skill)
+                .ToListAsync();
+        }
 
-        public async Task<Project?> GetByIdAsync(int id) =>
-            await _context.Projects.FindAsync(id);
+        public async Task<Project?> GetByIdAsync(int id)
+        {
+            return await _context.Projects
+                .Include(p => p.Technologies)
+                    .ThenInclude(pt => pt.Skill)
+                .FirstOrDefaultAsync(p => p.Id == id);
+        }
+
 
         public async Task<Project> AddAsync(Project project)
         {

@@ -15,7 +15,7 @@ namespace Portfolio.API
 
             CreateMap<ExperiencePostModel, Experience>();
             CreateMap<Experience, ExperienceDto>().ReverseMap();
-            CreateMap<ProjectPostModel, Project>();
+            CreateMap<ProjectPostModel, Project>().ForMember(dest => dest.Technologies, opt => opt.Ignore()); ;
             CreateMap<Project, ProjectDto>().ReverseMap();
 
             CreateMap<ProjectSkill, ProjectSkillPostModel>().ReverseMap();
