@@ -120,3 +120,4 @@ C:\Users\user1\Desktop\AyalaPortfolio\server\Portfolio.API\obj\Debug\net8.0\Port
 C:\Users\user1\Desktop\AyalaPortfolio\server\Portfolio.API\obj\Debug\net8.0\Portfolio.API.genruntimeconfig.cache
 C:\Users\user1\Desktop\AyalaPortfolio\server\Portfolio.API\obj\Debug\net8.0\ref\Portfolio.API.dll
 C:\Users\user1\Desktop\AyalaPortfolio\server\Portfolio.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\user1\Desktop\AyalaPortfolio\server\Portfolio.API\bin\Debug\net8.0\Portfolio.API.staticwebassets.runtime.json

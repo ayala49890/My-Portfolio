@@ -1,5 +1,88 @@
 {
   "Version": 1,
   "ManifestType": "Build",
-  "Endpoints": []
+  "Endpoints": [
+    {
+      "Route": "Images/workers.png",
+      "AssetFile": "Images/workers.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "231463"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/24Fi9k6T4WKLJNIqnLkyhn87C5bXfw2rNw9ICnzBuc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Jul 2025 00:45:54 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/24Fi9k6T4WKLJNIqnLkyhn87C5bXfw2rNw9ICnzBuc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/workers.pq0pl7pe8n.png",
+      "AssetFile": "Images/workers.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "231463"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/24Fi9k6T4WKLJNIqnLkyhn87C5bXfw2rNw9ICnzBuc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Jul 2025 00:45:54 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pq0pl7pe8n"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/24Fi9k6T4WKLJNIqnLkyhn87C5bXfw2rNw9ICnzBuc="
+        },
+        {
+          "Name": "label",
+          "Value": "Images/workers.png"
+        }
+      ]
+    }
+  ]
 }
