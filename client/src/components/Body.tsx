@@ -1,17 +1,18 @@
 import React from 'react';
-import Skills from '../features/skills/Skills';
 import Profile from '../features/profile/Profile';
 import Experiences from '../features/experiences/Experiences';
 import Projects from '../features/projects/Projects';
+import Hero from './Hero';
+import Navbar from './Navbar';
 
-function Body() {
+export default function Body() {
 return(
-  <>    
-    <Skills /> 
+  <>       
+    <Navbar />
+    <Hero />
     <Profile />
     <Experiences />
     <Projects />
   </>);
 }
 
-export default Body;
