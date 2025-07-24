@@ -487,6 +487,14 @@
             "type": "string",
             "nullable": true
           },
+          "link": {
+            "type": "string",
+            "nullable": true
+          },
+          "iconUrl": {
+            "type": "string",
+            "nullable": true
+          },
           "location": {
             "type": "string",
             "nullable": true

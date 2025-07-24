@@ -3,12 +3,38 @@
   "WorkspaceRootPath": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D924FB42-A681-4C6A-AF50-83AC884AFE25}|Portfolio.API.csproj|c:\\users\\user1\\desktop\\ayalaportfolio\\server\\portfolio.api\\portfolio.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{D924FB42-A681-4C6A-AF50-83AC884AFE25}|Portfolio.API.csproj|solutionrelative:portfolio.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A8D66D62-DBE6-46F1-A5E5-E0A4232EE5E5}|..\\Portfolio.Core\\Portfolio.Core.csproj|c:\\users\\user1\\desktop\\ayalaportfolio\\server\\portfolio.core\\dtos\\experiencedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D924FB42-A681-4C6A-AF50-83AC884AFE25}|Portfolio.API.csproj|c:\\users\\user1\\desktop\\ayalaportfolio\\server\\portfolio.api\\models\\post\\experiencepostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D924FB42-A681-4C6A-AF50-83AC884AFE25}|Portfolio.API.csproj|solutionrelative:models\\post\\experiencepostmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.Data\\Migrations\\20250724103428_AddLinkAndIconToExperience.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D924FB42-A681-4C6A-AF50-83AC884AFE25}|Portfolio.API.csproj|c:\\users\\user1\\desktop\\ayalaportfolio\\server\\portfolio.api\\controllers\\experiencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D924FB42-A681-4C6A-AF50-83AC884AFE25}|Portfolio.API.csproj|solutionrelative:controllers\\experiencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8D66D62-DBE6-46F1-A5E5-E0A4232EE5E5}|..\\Portfolio.Core\\Portfolio.Core.csproj|c:\\users\\user1\\desktop\\ayalaportfolio\\server\\portfolio.core\\entities\\experience.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8D66D62-DBE6-46F1-A5E5-E0A4232EE5E5}|..\\Portfolio.Core\\Portfolio.Core.csproj|c:\\users\\user1\\desktop\\ayalaportfolio\\server\\portfolio.core\\dtos\\myprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8D66D62-DBE6-46F1-A5E5-E0A4232EE5E5}|..\\Portfolio.Core\\Portfolio.Core.csproj|c:\\users\\user1\\desktop\\ayalaportfolio\\server\\portfolio.core\\entities\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D924FB42-A681-4C6A-AF50-83AC884AFE25}|Portfolio.API.csproj|c:\\users\\user1\\desktop\\ayalaportfolio\\server\\portfolio.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D924FB42-A681-4C6A-AF50-83AC884AFE25}|Portfolio.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8D66D62-DBE6-46F1-A5E5-E0A4232EE5E5}|..\\Portfolio.Core\\Portfolio.Core.csproj|c:\\users\\user1\\desktop\\ayalaportfolio\\server\\portfolio.core\\services\\iexperienceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D924FB42-A681-4C6A-AF50-83AC884AFE25}|Portfolio.API.csproj|c:\\users\\user1\\desktop\\ayalaportfolio\\server\\portfolio.api\\portfolio.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D924FB42-A681-4C6A-AF50-83AC884AFE25}|Portfolio.API.csproj|solutionrelative:portfolio.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D924FB42-A681-4C6A-AF50-83AC884AFE25}|Portfolio.API.csproj|c:\\users\\user1\\desktop\\ayalaportfolio\\server\\portfolio.api\\apimappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,24 +100,139 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Portfolio.API",
-              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.API\\Portfolio.API.csproj",
-              "RelativeDocumentMoniker": "Portfolio.API.csproj",
-              "ToolTip": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.API\\Portfolio.API.csproj*",
-              "RelativeToolTip": "Portfolio.API.csproj*",
+              "DocumentIndex": 1,
+              "Title": "ExperiencePostModel.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.API\\Models\\Post\\ExperiencePostModel.cs",
+              "RelativeDocumentMoniker": "Models\\Post\\ExperiencePostModel.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.API\\Models\\Post\\ExperiencePostModel.cs",
+              "RelativeToolTip": "Models\\Post\\ExperiencePostModel.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T10:36:02.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ExperienceController.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.API\\Controllers\\ExperienceController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ExperienceController.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.API\\Controllers\\ExperienceController.cs",
+              "RelativeToolTip": "Controllers\\ExperienceController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T10:33:03.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MyProfileDto.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.Core\\DTOs\\MyProfileDto.cs",
+              "RelativeDocumentMoniker": "..\\Portfolio.Core\\DTOs\\MyProfileDto.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.Core\\DTOs\\MyProfileDto.cs",
+              "RelativeToolTip": "..\\Portfolio.Core\\DTOs\\MyProfileDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-23T01:16:17.194Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T10:30:06.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Skill.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.Core\\Entities\\Skill.cs",
+              "RelativeDocumentMoniker": "..\\Portfolio.Core\\Entities\\Skill.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.Core\\Entities\\Skill.cs",
+              "RelativeToolTip": "..\\Portfolio.Core\\Entities\\Skill.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T10:29:42.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Experience.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.Core\\Entities\\Experience.cs",
+              "RelativeDocumentMoniker": "..\\Portfolio.Core\\Entities\\Experience.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.Core\\Entities\\Experience.cs",
+              "RelativeToolTip": "..\\Portfolio.Core\\Entities\\Experience.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAowBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T10:28:51.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExperienceDto.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.Core\\DTOs\\ExperienceDto.cs",
+              "RelativeDocumentMoniker": "..\\Portfolio.Core\\DTOs\\ExperienceDto.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.Core\\DTOs\\ExperienceDto.cs*",
+              "RelativeToolTip": "..\\Portfolio.Core\\DTOs\\ExperienceDto.cs*",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAkwAwAAABzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T10:18:49.318Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "20250724103428_AddLinkAndIconToExperience.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.Data\\Migrations\\20250724103428_AddLinkAndIconToExperience.cs",
+              "RelativeDocumentMoniker": "..\\Portfolio.Data\\Migrations\\20250724103428_AddLinkAndIconToExperience.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.Data\\Migrations\\20250724103428_AddLinkAndIconToExperience.cs",
+              "RelativeToolTip": "..\\Portfolio.Data\\Migrations\\20250724103428_AddLinkAndIconToExperience.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T10:34:28.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T09:51:23.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IExperienceService.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.Core\\Services\\IExperienceService.cs",
+              "RelativeDocumentMoniker": "..\\Portfolio.Core\\Services\\IExperienceService.cs",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.Core\\Services\\IExperienceService.cs",
+              "RelativeToolTip": "..\\Portfolio.Core\\Services\\IExperienceService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T10:17:45.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Portfolio.API.csproj",
+              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.API\\Portfolio.API.csproj",
+              "RelativeDocumentMoniker": "Portfolio.API.csproj",
+              "ToolTip": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.API\\Portfolio.API.csproj",
+              "RelativeToolTip": "Portfolio.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-23T01:16:17.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ApiMappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.API\\ApiMappingProfile.cs",
               "RelativeDocumentMoniker": "ApiMappingProfile.cs",
@@ -99,12 +240,11 @@
               "RelativeToolTip": "ApiMappingProfile.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAewBEAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T00:01:25.267Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-23T00:01:25.267Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "IProjectService.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.Core\\Services\\IProjectService.cs",
               "RelativeDocumentMoniker": "..\\Portfolio.Core\\Services\\IProjectService.cs",
@@ -116,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "Project.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.Core\\Entities\\Project.cs",
               "RelativeDocumentMoniker": "..\\Portfolio.Core\\Entities\\Project.cs",
@@ -128,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "ProjectDto.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.Core\\DTOs\\ProjectDto.cs",
               "RelativeDocumentMoniker": "..\\Portfolio.Core\\DTOs\\ProjectDto.cs",
@@ -140,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "ProjectsController.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.API\\Controllers\\ProjectsController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProjectsController.cs",
@@ -148,25 +288,11 @@
               "RelativeToolTip": "Controllers\\ProjectsController.cs",
               "ViewState": "AgIAAD0AAAAAAAAAAAAgwEkAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T23:55:11.747Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-22T23:55:11.747Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.API\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.API\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAuwEIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T09:51:23.582Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "ProjectRepository.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.Data\\Repositories\\ProjectRepository.cs",
               "RelativeDocumentMoniker": "..\\Portfolio.Data\\Repositories\\ProjectRepository.cs",
@@ -178,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 26,
               "Title": "20250723004036_AddImageUrlToProject.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.Data\\Migrations\\20250723004036_AddImageUrlToProject.cs",
               "RelativeDocumentMoniker": "..\\Portfolio.Data\\Migrations\\20250723004036_AddImageUrlToProject.cs",
@@ -190,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "ProjectPostModel.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.API\\Models\\Post\\ProjectPostModel.cs",
               "RelativeDocumentMoniker": "Models\\Post\\ProjectPostModel.cs",
@@ -202,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "ProjectService.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.Service\\ProjectService.cs",
               "RelativeDocumentMoniker": "..\\Portfolio.Service\\ProjectService.cs",
@@ -214,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "AutoMapperProfile.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.Core\\AutoMapperProfile.cs",
               "RelativeDocumentMoniker": "..\\Portfolio.Core\\AutoMapperProfile.cs",
@@ -226,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "..\\Portfolio.Data\\AppDbContext.cs",
@@ -238,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 25,
               "Title": "20250714195022_DeleteLinkdIn.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.Data\\Migrations\\20250714195022_DeleteLinkdIn.cs",
               "RelativeDocumentMoniker": "..\\Portfolio.Data\\Migrations\\20250714195022_DeleteLinkdIn.cs",
@@ -250,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "SkillsController.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.API\\Controllers\\SkillsController.cs",
               "RelativeDocumentMoniker": "Controllers\\SkillsController.cs",
@@ -262,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 20,
               "Title": "MyProfileController.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.API\\Controllers\\MyProfileController.cs",
               "RelativeDocumentMoniker": "Controllers\\MyProfileController.cs",
@@ -274,7 +400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "MyProfileService.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.Service\\MyProfileService.cs",
               "RelativeDocumentMoniker": "..\\Portfolio.Service\\MyProfileService.cs",
@@ -286,7 +412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 23,
               "Title": "MyProfileRepository.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.Data\\Repositories\\MyProfileRepository.cs",
               "RelativeDocumentMoniker": "..\\Portfolio.Data\\Repositories\\MyProfileRepository.cs",
@@ -298,7 +424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 24,
               "Title": "IMyProfileService.cs",
               "DocumentMoniker": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.Core\\Services\\IMyProfileService.cs",
               "RelativeDocumentMoniker": "..\\Portfolio.Core\\Services\\IMyProfileService.cs",

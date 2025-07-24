@@ -243,3 +243,4 @@ C:\Users\user1\Desktop\AyalaPortfolio\server\UnitTests\bin\Debug\net8.0\Portfoli
 C:\Users\user1\Desktop\AyalaPortfolio\server\UnitTests\bin\Debug\net8.0\Portfolio.Service.pdb
 C:\Users\user1\Desktop\AyalaPortfolio\server\UnitTests\bin\Debug\net8.0\Castle.Core.dll
 C:\Users\user1\Desktop\AyalaPortfolio\server\UnitTests\bin\Debug\net8.0\Moq.dll
+C:\Users\user1\Desktop\AyalaPortfolio\server\UnitTests\bin\Debug\net8.0\Portfolio.API.staticwebassets.runtime.json

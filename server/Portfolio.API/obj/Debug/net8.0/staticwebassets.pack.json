@@ -1,6 +1,18 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.API\\wwwroot\\Images\\courses.png",
+      "PackagePath": "staticwebassets\\Images\\courses.png"
+    },
+    {
+      "Id": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.API\\wwwroot\\Images\\recepies.png",
+      "PackagePath": "staticwebassets\\Images\\recepies.png"
+    },
+    {
+      "Id": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.API\\wwwroot\\Images\\uscellular.png",
+      "PackagePath": "staticwebassets\\Images\\uscellular.png"
+    },
+    {
       "Id": "C:\\Users\\user1\\Desktop\\AyalaPortfolio\\server\\Portfolio.API\\wwwroot\\Images\\workers.png",
       "PackagePath": "staticwebassets\\Images\\workers.png"
     },
