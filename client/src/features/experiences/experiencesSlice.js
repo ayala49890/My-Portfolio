@@ -3,35 +3,35 @@ import axios from 'axios';
 
 export const fetchExperiences = createAsyncThunk('experiences/fetchExperiences', async () => {
   const response = await axios.get('https://localhost:7101/api/experience');
-  return response.data; 
+  return response.data;
 });
 
 const experiencesSlice = createSlice({
   name: 'experiences',
   initialState: {
     data: [],
-    status: 'idle', 
+    status: 'idle',
     error: null,
   },
   reducers: {
     addExperience: (state, action) => {
-        state.data.push(action.payload);
+      state.data.push(action.payload);
     },
     updateExperience: (state, action) => {
-        const index = state.data.findIndex(experience => experience.id === action.payload.id);
-        if (index !== -1) {
+      const index = state.data.findIndex(experience => experience.id === action.payload.id);
+      if (index !== -1) {
         state.data[index] = action.payload;
-        }
+      }
     },
     removeExperience: (state, action) => {
-        state.data = state.data.filter(experience => experience.id !== action.payload);
+      state.data = state.data.filter(experience => experience.id !== action.payload);
     },
     resetExperiences: (state) => {
-        state.data = [];
-        state.status = 'idle';
-        state.error = null;
-    }  
-},
+      state.data = [];
+      state.status = 'idle';
+      state.error = null;
+    }
+  },
   extraReducers: (builder) => {
     builder
       .addCase(fetchExperiences.pending, (state) => {
@@ -47,5 +47,5 @@ const experiencesSlice = createSlice({
       });
   }
 });
-export const { addExperience, updateExperience, removeExperience,resetExperiences } = experiencesSlice.actions;
+export const { addExperience, updateExperience, removeExperience, resetExperiences } = experiencesSlice.actions;
 export default experiencesSlice.reducer;

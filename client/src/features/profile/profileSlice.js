@@ -3,26 +3,26 @@ import axios from 'axios';
 
 export const fetchProfile = createAsyncThunk('profile/fetchProfile', async () => {
   const response = await axios.get('https://localhost:7101/api/myProfile');
-  return response.data; 
+  return response.data;
 });
 
 const profileSlice = createSlice({
   name: 'profile',
   initialState: {
     data: {},
-    status: 'idle', 
+    status: 'idle',
     error: null,
   },
   reducers: {
     updateProfile: (state, action) => {
-        state.data = { ...state.data, ...action.payload };
+      state.data = { ...state.data, ...action.payload };
     },
     resetProfile: (state) => {
-        state.data = {};
-        state.status = 'idle';
-        state.error = null;
-    }  
-},
+      state.data = {};
+      state.status = 'idle';
+      state.error = null;
+    }
+  },
   extraReducers: (builder) => {
     builder
       .addCase(fetchProfile.pending, (state) => {

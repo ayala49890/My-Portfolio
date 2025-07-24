@@ -9,7 +9,7 @@ export default function Profile() {
 
   useEffect(() => {
     if (status === 'idle') {
-      dispatch(fetchProfile()); 
+      dispatch(fetchProfile());
     }
   }, [dispatch, status]);
 

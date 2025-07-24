@@ -35,13 +35,13 @@ export default function Hero() {
               <p className="text-xl text-[#e9d5c0] mt-4">{profile.title}</p>
             )}
           </div>
-          
-              <h1
-                className="mt-6 font-extrabold text-white animate-bounce-inset"
-                style={{ fontFamily: "'Poppins', sans-serif" }}
-              >
-              Problem Solver. Code Optimizer. UI Improver.
-            </h1>
+
+          <h1
+            className="mt-6 font-extrabold text-white animate-bounce-inset"
+            style={{ fontFamily: "'Poppins', sans-serif" }}
+          >
+            Problem Solver. Code Optimizer. UI Improver.
+          </h1>
         </div>
       </div>
     </section>
