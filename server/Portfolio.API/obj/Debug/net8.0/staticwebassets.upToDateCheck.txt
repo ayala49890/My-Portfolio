@@ -1,3 +1,5 @@
+wwwroot\Images\amdocs.png
+wwwroot\Images\clinic.png
 wwwroot\Images\courses.png
 wwwroot\Images\recepies.png
 wwwroot\Images\uscellular.png
