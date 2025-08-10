@@ -38,15 +38,4 @@ To run the API locally:
    `https://localhost:5001/swagger`
 
 > Note: The React frontend is located in a separate folder/repository.
-## Unit Testing
-
-This project includes a dedicated Unit Tests project covering core business logic and services.  
-Unit tests help ensure code stability, facilitate maintenance, and demonstrate professional development practices.
-
-### Running Tests
-
-To run the tests, navigate to the test project folder and execute:
-
-```bash
-dotnet test
 
