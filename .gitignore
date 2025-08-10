@@ -59,6 +59,14 @@ dkms.conf
 .vs/
 obj/
 bin/
-client/node_modules/
+
+# Cache
 *.cache
 *.log
+
+# React build files
+client/node_modules/
+client/build/
+
+# Environment files
+client/.env
